@@ -1,0 +1,270 @@
+
+
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F3F1E6; opacity: ;
+    margin: 10px
+}
+
+header{
+    background-color: #6f6f6f;
+    min-height: 50px;
+}
+
+/* flexbox section 1 */
+
+.flexbox-about-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+    align-content: center;
+}
+
+p {
+    opacity: 75%;
+    letter-spacing: .5px;
+    line-height: 1.5;
+    margin-top: 2em;
+    
+}
+
+h1 {
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 50px;
+    align-content: center;
+
+}
+
+em{
+    background-color:#6f6f6f;
+    color: ghostwhite;
+    opacity: 100%;
+}
+
+h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.portfolio {
+    align-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#calltoaction {
+    font-weight: bold;
+    color: #6f6f6f;
+    opacity: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.about {
+    text-align: center;
+    max-width: 400px;
+}
+
+
+.flexbox-about-item-2 {
+    max-width: 400px;
+}
+
+#button {
+    margin-top: 2em;
+}
+
+.flexbox-about-item {
+    text-align: center;
+}
+
+.flexbox-portfolio-container {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexbox-portfolio-item {
+    min-height: 350px;
+    min-width: 350px;
+    border: 3px solid #333
+}
+
+.flexbox-portfolio-item-1 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-2 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-3 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-4 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-5 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-6 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-7 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-8 {
+    margin:10px;
+}
+
+.flexbox-portfolio-item-9 {
+    margin:10px;
+}
+
+/* tablets*/
+@media (min-width: 768px){
+    .flexbox-about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 750px;
+    }
+    header{
+        background-color: #6f6f6f;
+        min-height: 100px;
+    }
+    .flexbox-about-item-2 {
+        max-width: 700px;
+    }
+    .about {
+        text-align: center;
+        max-width: 700px;
+    }
+    .flexbox-about-item {
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-variant-caps: all-petite-caps;
+        letter-spacing: 3px;
+        font-weight: 200;
+        font-size: 55px;
+        align-content: center;
+    
+    }
+
+    #button {
+        padding-top: 20px;
+        text-align: center;
+        margin: 2px;
+        justify-content: center;
+    }
+
+    .flexbox-portfolio-container {
+        flex-wrap: wrap; 
+        display: flex;
+    }
+
+    .flexbox-portfolio-item {
+        height: 300px;
+        min-width: 300px;
+        border: 3px solid #333
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktops min-width 992*/
+@media (min-width: 992px) {
+    .flexbox-about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 992px;
+    }
+    header{
+        background-color: #6f6f6f;
+        min-height: 100px;
+    }
+    .flexbox-about-item-2 {
+        max-width: 500px;
+        justify-content: center;
+    }
+    .about {
+        text-align: right;
+        max-width: 492px;
+    }
+
+    p {
+        opacity: 75%;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        margin-top: 1em;
+        font-size: 12px;
+        
+    }
+
+    .flexbox-about-item {
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-variant-caps: all-petite-caps;
+        letter-spacing: 3px;
+        font-weight: 200;
+        font-size: 55px;
+        align-content: center;
+    }
+
+    h2 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    #button {
+        padding-top: 20px;
+        text-align: right;
+        margin: 2px;
+        justify-content: center;
+    }
+
+    .flexbox-portfolio-container {
+        flex-wrap: wrap; 
+        display: flex;
+        flex-direction: unset;
+    }
+
+    .flexbox-portfolio-item {
+        height: 300px;
+        min-width: 300px;
+        border: 3px solid #333
+    }
+
+    
