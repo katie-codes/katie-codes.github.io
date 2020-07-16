@@ -8,9 +8,39 @@ html {
 }
 
 header{
-    background-color: #6f6f6f;
-    min-height: 50px;
+    background-color: rgb(114, 65, 212);
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
 }
+
+#logo {
+    display: flex;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+
+.headertext {
+    color: white;
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+
+  }
+
+.headertext:hover {
+    color:#97e7d3;
+    text-decoration: underline
+
+}
+
+
 
 /* flexbox section 1 */
 
@@ -26,6 +56,7 @@ p {
     letter-spacing: .5px;
     line-height: 1.5;
     margin-top: 2em;
+    font-size: 12px;
     
 }
 
@@ -50,10 +81,15 @@ h2 {
     line-height: 1.5;
 }
 
-.portfolio {
+
+.flexbox-portfolio-container  {
     align-content: center;
     text-align: center;
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #calltoaction {
@@ -67,12 +103,12 @@ h2 {
 
 .about {
     text-align: center;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 
 .flexbox-about-item-2 {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 #button {
@@ -83,54 +119,331 @@ h2 {
     text-align: center;
 }
 
+
+
+
+
+
+
 .flexbox-portfolio-container {
-    
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .flexbox-portfolio-item {
-    min-height: 350px;
-    min-width: 350px;
-    border: 3px solid #333
+    height: 350px;
+    width: 350px;
+    border: 1px solid #333
+
 }
 
 .flexbox-portfolio-item-1 {
     margin:10px;
+    width: 350px;
+    height: 350px;
 }
 
 .flexbox-portfolio-item-2 {
     margin:10px;
+    width: 350px;
+    height: 350px;
 }
 
 .flexbox-portfolio-item-3 {
     margin:10px;
+    width: 350px;
 }
 
 .flexbox-portfolio-item-4 {
     margin:10px;
+    width: 350px;
+
 }
 
 .flexbox-portfolio-item-5 {
     margin:10px;
+    width: 350px;
+
 }
 
 .flexbox-portfolio-item-6 {
     margin:10px;
+    width: 350px;
+
 }
 
 .flexbox-portfolio-item-7 {
     margin:10px;
+    width: 350px;
+
 }
 
 .flexbox-portfolio-item-8 {
     margin:10px;
+    width: 350px;
+
 }
 
 .flexbox-portfolio-item-9 {
     margin:10px;
+    width: 350px;
+
 }
+
+
+.overlay {
+    width:350px;
+    height:350px;
+    transition:all 0.3s ease;
+}
+
+#overlay:hover {
+    background:#53a7ea;
+}
+
+
+
+/* overlay */
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .image {
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(114, 65, 212);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+/* portfolio buttons style */
+
+.portfolio-link-text {
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio-link-text:hover {
+    color:#97e7d3;
+    text-decoration: underline
+}
+
+
+
+/* form */
+
+
+
+form {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.form-item label {
+    flex-basis: 40px;
+    font-size: 22px;
+}
+
+.form-item input{
+min-width: 350px;
+}
+
+.form-item textarea#message { 
+    min-width: 350px;
+    min-height: 150px;
+    }
+
+
+.form-item textarea {
+    flex-basis: 50%;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid #97e7d3;
+}
+
+.form-item input,
+.form-item textarea {
+    color: white;
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.form-item button {
+    border: 2px solid #97e7d3;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.form-item button:hover {
+    border: 2px solid rgb(114, 65, 212);
+    background-color: rgb(114, 65, 212);
+    color: #FFF;
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+}
+
+.form-item button {
+    width: 100px;
+}
+
+
+.form-item label {
+    color: rgb(114, 65, 212);
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+
+
+/* project page */
+
+
+.flexbox-project-container {
+    align-content: center;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #97e7d3;
+    width: 100%;
+}
+
+.flexbox-project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-project-item-1 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-2 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-3 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-4 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-5 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-6 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-7 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+
+
 
 /* tablets*/
 @media (min-width: 768px){
@@ -139,10 +452,7 @@ h2 {
         flex-wrap: wrap;
         justify-content: center;
     }
-    header{
-        background-color: #6f6f6f;
-        min-height: 100px;
-    }
+
     .flexbox-about-item-2 {
         max-width: 700px;
     }
@@ -174,13 +484,101 @@ h2 {
     .flexbox-portfolio-container {
         flex-wrap: wrap; 
         display: flex;
+        flex-direction: unset;
     }
 
     .flexbox-portfolio-item {
-        height: 300px;
-        min-width: 300px;
-        border: 3px solid #333
+        height: 350px;
+        min-width: 350px;
+        border: 1px solid #333
     }
+
+
+
+
+   
+/* widen form*/ 
+
+    .form-item input{
+        min-width: 700px;
+        }
+
+        .form-item textarea#message { 
+            min-width: 700px;
+            min-height: 200px;
+            }
+
+
+
+
+/* tablet project page */
+
+
+.flexbox-project-container {
+    flex-wrap: wrap; 
+    display: flex;
+    flex-direction: unset;
+    background-color: #97e7d3; 
+    width: 100%;
+}
+
+.flexbox-project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-project-item-1 {
+    height: 350px;
+    width: 722px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-2 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-3 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-4 {
+    height: 350px;
+    width: 722px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-5 {
+    height: 350px;
+    width: 722px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-6 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+.flexbox-project-item-7 {
+    height: 350px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
+
+
+
 
 
 
@@ -198,23 +596,21 @@ h2 {
 
 
 /* desktops min-width 992*/
-@media (min-width: 992px) {
+@media (min-width: 1172px) {
     .flexbox-about-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    header{
-        background-color: #6f6f6f;
-        min-height: 100px;
-    }
+
     .flexbox-about-item-2 {
-        max-width: 500px;
-        justify-content: center;
+        max-width: 600px;
+        justify-content: right;
     }
+
     .about {
-        text-align: right;
-        max-width: 492px;
+        text-align: center;
+        max-width: 900px;
     }
 
     p {
@@ -228,7 +624,7 @@ h2 {
 
     .flexbox-about-item {
         flex-wrap: wrap;
-        max-width: 400px;
+        max-width: 600px;
     }
 
     h1 {
@@ -259,9 +655,19 @@ h2 {
     }
 
     .flexbox-portfolio-item {
-        height: 300px;
-        min-width: 300px;
-        border: 3px solid #333
+        height: 350px;
+        width: 350px;
+        border: 1px solid #333
     }
 
-    
+
+ .flexbox-about-item-1 {
+    text-align: right;
+    justify-content: right;
+ }
+
+ .about {
+    text-align: center;
+    max-width: 900px;
+}
+
