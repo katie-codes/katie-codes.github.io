@@ -16,6 +16,8 @@ header{
     align-items: center;
 }
 
+
+
 #logo {
     display: flex;
     margin-right: auto;
@@ -41,6 +43,47 @@ header{
 }
 
 
+footer{
+    background-color: rgb(114, 65, 212);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 100px;
+    width:100%
+    
+}
+
+
+h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: white;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.socials {
+    margin: 10px;
+}
+
+.footer-about {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* flexbox section 1 */
 
@@ -48,6 +91,7 @@ header{
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -56,7 +100,7 @@ p {
     letter-spacing: .5px;
     line-height: 1.5;
     margin-top: 2em;
-    font-size: 12px;
+    font-size: 14px;
     
 }
 
@@ -64,7 +108,7 @@ h1 {
     font-variant-caps: all-petite-caps;
     letter-spacing: 3px;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 60px;
     align-content: center;
 
 }
@@ -94,8 +138,8 @@ h2 {
 
 #calltoaction {
     font-weight: bold;
-    color: #6f6f6f;
-    opacity: 100%;
+    color: black
+    opacity: 80%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -109,6 +153,8 @@ h2 {
 
 .flexbox-about-item-2 {
     max-width: 500px;
+    align-items: center;
+    justify-content: center;
 }
 
 #button {
@@ -385,6 +431,7 @@ min-width: 350px;
     flex-direction: column;
     background-color: #97e7d3;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .flexbox-project-item {
@@ -605,7 +652,8 @@ min-width: 350px;
 
     .flexbox-about-item-2 {
         max-width: 600px;
-        justify-content: right;
+        justify-content: center;
+        align-items: center;
     }
 
     .about {
@@ -618,7 +666,7 @@ min-width: 350px;
         letter-spacing: .5px;
         line-height: 1.5;
         margin-top: 1em;
-        font-size: 12px;
+        font-size: 14px;
         
     }
 
@@ -636,7 +684,7 @@ min-width: 350px;
     }
 
     h2 {
-        font-size: 13px;
+        font-size: 18px;
         letter-spacing: 1px;
         line-height: 1.5;
     }
