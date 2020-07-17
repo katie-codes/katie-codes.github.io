@@ -705,3 +705,6 @@ min-width: 350px;
     max-width: 900px;
 }
 
+#project-text {
+    min-width: 800px;
+}
