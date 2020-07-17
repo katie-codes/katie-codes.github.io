@@ -17,7 +17,6 @@ header{
 }
 
 
-
 #logo {
     display: flex;
     margin-right: auto;
@@ -42,7 +41,6 @@ header{
 
 }
 
-
 footer{
     background-color: rgb(114, 65, 212);
     height: 40px;
@@ -55,7 +53,6 @@ footer{
     width:100%
     
 }
-
 
 h4 {
     font-size: 15px;
@@ -77,21 +74,12 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
 /* flexbox section 1 */
 
 .flexbox-about-container {
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     width: 100%;
 }
 
@@ -100,7 +88,7 @@ p {
     letter-spacing: .5px;
     line-height: 1.5;
     margin-top: 2em;
-    font-size: 14px;
+    font-size: 12px;
     
 }
 
@@ -108,7 +96,7 @@ h1 {
     font-variant-caps: all-petite-caps;
     letter-spacing: 3px;
     font-weight: 200;
-    font-size: 60px;
+    font-size: 50px;
     align-content: center;
 
 }
@@ -138,8 +126,8 @@ h2 {
 
 #calltoaction {
     font-weight: bold;
-    color: black
-    opacity: 80%;
+    color: #6f6f6f;
+    opacity: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -153,8 +141,6 @@ h2 {
 
 .flexbox-about-item-2 {
     max-width: 500px;
-    align-items: center;
-    justify-content: center;
 }
 
 #button {
@@ -370,7 +356,7 @@ min-width: 350px;
 
 .form-item input,
 .form-item textarea {
-    color: white;
+    color: black;
     font-size: 20px;
     font-variant-caps: all-petite-caps;
     letter-spacing: 3px;
@@ -384,17 +370,19 @@ min-width: 350px;
 
 
 .form-item button {
-    border: 2px solid #97e7d3;
-    background-color: #FFF;
+    border: 2px solid #bee7dd;
+    background-color: #97e7d3;
+    color: rgb(114, 65, 212);
     padding: 5px;
     font-size: 20px;
     font-variant-caps: all-petite-caps;
     letter-spacing: 3px;
-    margin-top: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .form-item button:hover {
-    border: 2px solid rgb(114, 65, 212);
+    border: 2px solid rgb(148, 119, 206);
     background-color: rgb(114, 65, 212);
     color: #FFF;
     font-size: 20px;
@@ -402,7 +390,7 @@ min-width: 350px;
 }
 
 .form-item button {
-    width: 100px;
+    width: 150px;
 }
 
 
@@ -431,7 +419,6 @@ min-width: 350px;
     flex-direction: column;
     background-color: #97e7d3;
     width: 100%;
-    padding-bottom: 50px;
 }
 
 .flexbox-project-item {
@@ -652,8 +639,7 @@ min-width: 350px;
 
     .flexbox-about-item-2 {
         max-width: 600px;
-        justify-content: center;
-        align-items: center;
+        justify-content: right;
     }
 
     .about {
@@ -666,7 +652,7 @@ min-width: 350px;
         letter-spacing: .5px;
         line-height: 1.5;
         margin-top: 1em;
-        font-size: 14px;
+        font-size: 12px;
         
     }
 
@@ -684,7 +670,7 @@ min-width: 350px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 13px;
         letter-spacing: 1px;
         line-height: 1.5;
     }
