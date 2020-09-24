@@ -275,6 +275,11 @@ h2 {
   
   .image {
     display: block;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+
   }
   
   .overlay {
@@ -503,6 +508,14 @@ min-width: 350px;
 
 
 
+
+
+
+
+
+
+
+
 /* tablets*/
 @media (min-width: 768px){
     .flexbox-about-container {
@@ -594,7 +607,7 @@ min-width: 350px;
     border: 1px solid #333
 }
 
-.flexbox-project-item-2 {
+/* .flexbox-project-item-2 {
     height: 350px;
     width: 350px;
     margin:10px;
@@ -634,10 +647,7 @@ min-width: 350px;
     width: 350px;
     margin:10px;
     border: 1px solid #333
-}
-
-
-
+} */
 
 
 
@@ -663,14 +673,14 @@ min-width: 350px;
     }
 
     .flexbox-about-item-2 {
-        max-width: 600px;
+        /* max-width: 600px; */
         justify-content: center;
         align-items: center;
     }
 
     .about {
         text-align: center;
-        max-width: 900px;
+        /* max-width: 900px; */
     }
 
     p {
@@ -684,7 +694,7 @@ min-width: 350px;
 
     .flexbox-about-item {
         flex-wrap: wrap;
-        max-width: 600px;
+        /* max-width: 600px; */
     }
 
     h1 {
@@ -732,7 +742,7 @@ min-width: 350px;
 }
 
 .project-text {
-    width: 1000px;
     text-align: center;
+    max-width: 900px;
 }
 
