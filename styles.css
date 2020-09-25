@@ -505,7 +505,12 @@ min-width: 350px;
     border: 1px solid #333
 }
 
-
+.flexbox-project-item-8 {
+    height: 1000px;
+    width: 350px;
+    margin:10px;
+    border: 1px solid #333
+}
 
 
 
