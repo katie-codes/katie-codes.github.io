@@ -164,7 +164,7 @@ h2 {
 
 
 .flexbox-about-item-2 {
-    max-width: 500px;
+    max-width: 300px;
     align-items: center;
     justify-content: center;
 }
@@ -175,6 +175,7 @@ h2 {
 
 .flexbox-about-item {
     text-align: center;
+    /* max-width: 300px; */
 }
 
 
@@ -279,6 +280,7 @@ h2 {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+    max-width: 300px;
 
   }
   
