@@ -251,6 +251,14 @@ h2 {
 
 }
 
+.flexbox-portfolio-item-10 {
+    margin:10px;
+    width: 500px;
+
+}
+
+
+
 
 .overlay {
     width:350px;
@@ -283,6 +291,11 @@ h2 {
     max-width: 300px;
 
   }
+
+  .ppt {
+    object-fit: cover;
+  }
+ 
   
   .overlay {
     position: absolute;
